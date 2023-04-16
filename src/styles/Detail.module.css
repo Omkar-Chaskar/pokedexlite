@@ -1,0 +1,110 @@
+.main {
+    margin: 5rem;
+    padding: 2rem;
+  }
+
+  .navigation   {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .navButton {
+    border: 2px solid #040404;
+    background-color: #898a89;
+    color: aliceblue;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 13px;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .name {
+    font-size: 3rem;
+    margin-right: 2rem;
+  }
+  
+  .imageContainer {
+    margin: 5rem;
+  }
+  
+  .detailsContainer {
+    flex: 1;
+  }
+  
+  .detailsRow {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .detailsTitle {
+    font-weight: bold;
+    margin-right: 1rem;
+  }
+  
+  .detailsValue {
+    flex: 1;
+  }
+  
+  .button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #f7df1e;
+    border: none;
+    border-radius: 0.25rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .li:last-child {
+    margin-right: 0;
+  }
+  
+  .img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .h2 {
+    font-size: 1rem;
+    text-align: center;
+    margin: 0;
+  }
+
+  .list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 5rem;
+    gap: 2rem;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
