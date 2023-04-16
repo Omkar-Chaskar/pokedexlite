@@ -1,0 +1,30 @@
+.paginationWrapper {
+    margin-top: 20px;
+  }
+  
+  .pagination li.page-item.active button {
+    background-color: #0070f3;
+    border-color: #0070f3;
+  }
+  
+  .pagination li.page-item button {
+    color: #0070f3;
+    border-color: #0070f3;
+  }
+  
+  .pagination li.page-item.disabled button {
+    opacity: 0.5;
+  }
+  
+  .pagination li.page-item.disabled button:hover {
+    cursor: not-allowed;
+  }
+  
+  .pagination li.page-item button:hover {
+    background-color: #f2f2f2;
+  }
+  
+  .justifyContentCenter {
+    justify-content: center;
+  }
+  
