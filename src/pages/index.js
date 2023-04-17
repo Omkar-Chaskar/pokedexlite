@@ -38,7 +38,7 @@ export default function Home({ pokemons }) {
     setPage(newPage);
   };
 
-  if (loading && page <= 3) {
+  if (loading) {
     // show loading message only for the first 3 pages
     return <p>Loading...</p>;
   }
@@ -49,7 +49,7 @@ export default function Home({ pokemons }) {
 
   const start = (page - 1) * POKEMON_PER_PAGE;
   const end = page * POKEMON_PER_PAGE;
-  const currentPagePokemons = page-1 <= 3 ? pokemons.slice(start, end) : data.pokemons.slice(start, end);
+  const currentPagePokemons = page < 4 ? pokemons.slice(start, end) : data.pokemons.slice(start, end);
 
   return (
     <>
@@ -68,11 +68,12 @@ export default function Home({ pokemons }) {
           })}
         </ul>
         <Pagination
-          currentPage={page}
+          currentPage={ page }
           onPageChange={handlePageChange}
-          totalPages={Math.ceil(page-1 <= 3 ? pokemons.length : data.pokemons.length / POKEMON_PER_PAGE)}
+          totalPages={Math.ceil((page<= 3?pokemons.length:data.pokemons.length) / POKEMON_PER_PAGE)}
+          setPage={setPage}
         />
-      </main>
+      </main> 
     </>
   );
 }
